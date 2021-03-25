@@ -1,4 +1,4 @@
-<template>
+<template functional>
   <section class="hero pt-16">
     <div class="container">
       <div class="img mb-16">
