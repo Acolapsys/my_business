@@ -1,0 +1,17 @@
+@import './fonts.css';
+
+body {
+    @apply box-border;
+    font-family: Circe, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+.container {
+    @apply max-w-screen-lg mx-auto;
+}
+.button {
+    @apply rounded-50;
+}
