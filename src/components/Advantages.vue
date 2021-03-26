@@ -10,9 +10,9 @@
         </h3>
         <img src="@/assets/img/span.svg" alt="span" class="ml-4" />
       </div>
-      <div class="flex">
+      <div class="flex mobile-max:flex-col">
         <div
-          class="item flex flex-col items-center"
+          class="item flex flex-col items-center mr-100 mobile-max:mr-0 mobile-max:mb-10"
           v-for="(item, idx) in items"
           :key="idx"
         >
@@ -74,7 +74,6 @@ export default {
 }
 .item {
   max-width: 260px;
-  margin-right: 100px;
   &:last-child {
     margin-right: 0;
   }

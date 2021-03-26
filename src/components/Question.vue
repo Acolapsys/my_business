@@ -1,12 +1,14 @@
 <template>
   <section class="question pt-16">
     <div class="container flex flex-col items-center w-full">
-      <h3 class="content text-black2 font-bold mb-10">
+      <h3 class="content text-black2 font-bold mb-10 mobile-max:text-center">
         Для начала работы ответьте на вопрос, есть ли у вас уже существующий
         бизнес?
       </h3>
-      <div class="flex">
-        <div class="button bg-red text-white py-3 px-12 mr-7 text-22">
+      <div class="flex lg-max:flex-col">
+        <div
+          class="button bg-red text-white py-3 px-12 mr-7 text-22 lg-max:mr-0 lg-max:mb-3"
+        >
           <a href="/">Да, у меня уже есть бизнес</a>
         </div>
         <div class="button bg-blue text-white py-3 px-12 text-22">
@@ -20,7 +22,7 @@
 .content {
   font-size: 30px;
   line-height: 111.4%;
-  width: 552px;
+  max-width: 552px;
 }
 .question {
   background-image: url(../assets/img/background2.png);

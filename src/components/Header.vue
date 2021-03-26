@@ -1,8 +1,8 @@
 <template>
   <header class="header pt-8">
     <div class="max-w-screen-xl px-10 mx-auto">
-      <div class="flex items-center justify-between">
-        <nav class="nav">
+      <div class="flex items-center justify-between mobile-max:flex-col">
+        <nav class="nav flex items-center mobile-max:flex-col">
           <router-link
             to="/profile"
             class="rounded-50 text-white bg-red px-8 py-2 mr-7"

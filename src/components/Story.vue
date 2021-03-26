@@ -1,12 +1,12 @@
 <template>
   <div
-    class="story flex justify-between items-center mb-10 w-full"
+    class="story flex justify-between items-center mb-10 w-full mobile-max:flex-col"
     :class="{ 'flex-row-reverse': !leftSide }"
   >
-    <div class="img">
+    <div class="img" :class="{ 'mr-5': leftSide }">
       <img :src="story.img" alt="История успеха" />
     </div>
-    <div class="content flex flex-col">
+    <div class="content flex flex-col" :class="{ 'mr-5': !leftSide }">
       <h4 class="font-bold text-black2 mb-6 text-24">{{ story.title }}</h4>
       <div class="story__subtitle mb-4 flex">
         <img src="@/assets/img/arrows_right.svg" alt="Стрелка вправо" />
@@ -49,6 +49,6 @@ export default {
   width: 180px;
 }
 .img {
-  max-width: 340px;
+  min-width: 340px;
 }
 </style>

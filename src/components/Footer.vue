@@ -1,20 +1,20 @@
 <template>
   <footer class="footer py-8 bg-black3">
     <div class="max-w-screen-xl px-10 mx-auto">
-      <div class="flex items-center justify-between">
-        <nav class="footer__nav">
+      <div class="flex items-center justify-between tablet-max:items-start">
+        <nav class="footer__nav flex tablet-max:flex-col">
           <router-link
             :to="menuItem.link"
-            class="text-white font-16 leading-6 font-bold tracking-small mr-11"
+            class="text-white font-16 leading-6 font-bold tracking-small mr-11 tablet-max:mb-1"
             v-for="(menuItem, idx) in navMenu"
             :key="`${menuItem.title}_${idx}`"
             >{{ menuItem.title }}</router-link
           >
         </nav>
-        <div class="contacts">
+        <div class="contacts flex tablet-max:flex-col">
           <a
             href="mailto:service@in-line.ru"
-            class="text-white tracking-small font-16 leading-6 font-bold mr-8"
+            class="text-white tracking-small font-16 leading-6 font-bold mr-8 tablet-max:mb-1"
             >service@in-line.ru</a
           >
           <a

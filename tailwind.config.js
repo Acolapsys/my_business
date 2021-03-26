@@ -3,6 +3,12 @@ module.exports = {
 
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      desktop: "1280px",
+      "tablet-max": { max: "1127px" },
+      "lg-max": { max: "1023px" },
+      "mobile-max": { max: "767px" },
+    },
     fontSize: {
       16: "16px",
       20: "20px",
@@ -27,6 +33,9 @@ module.exports = {
       },
       maxWidth: {
         263: "263px",
+      },
+      spacing: {
+        100: "100px",
       },
     },
   },
