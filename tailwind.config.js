@@ -4,7 +4,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontSize: {
+      20: "20px",
       22: "22px",
+      24: "24px",
+      40: "40px",
+      50: "50px",
     },
     extend: {
       colors: {

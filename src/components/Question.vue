@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <section class="question pt-16">
     <div class="container flex flex-col items-center w-full">
       <h3 class="content text-black2 font-bold mb-10">
