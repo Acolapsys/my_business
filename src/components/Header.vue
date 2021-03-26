@@ -1,6 +1,6 @@
 <template>
   <header class="header pt-8">
-    <div class="container">
+    <div class="max-w-screen-xl px-10 mx-auto">
       <div class="flex items-center justify-between">
         <nav class="nav">
           <router-link
