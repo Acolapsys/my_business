@@ -24,7 +24,7 @@
 </template>
 <style lang="scss" scoped>
 .helper {
-  background-image: url(../assets/img/background3.svg);
+  background-image: url(../../assets/img/background3.svg);
   background-position: center;
   background-size: cover;
   padding: 50px 0 72px;

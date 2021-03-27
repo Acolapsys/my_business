@@ -1,7 +1,7 @@
 <template>
   <div>
     <header
-      class="header pt-8 mobile-max:bg-red mobile-max:text-white mobile-max:py-4"
+      class="header py-8 mobile-max:bg-red mobile-max:text-white mobile-max:py-4"
     >
       <div class="max-w-screen-xl px-10 mx-auto">
         <!-- desktop view -->
@@ -74,7 +74,14 @@
           />
         </svg>
       </div>
-      <div class="links-mobile">Links</div>
+      <div class="links-mobile pa-4">
+        <div @click="linkTo('/profile')">
+          <span :style="{ cursor: 'pointer' }">Личный кабинет</span>
+        </div>
+        <div @click="linkTo('/')">
+          <span :style="{ cursor: 'pointer' }">Каталог услуг</span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -94,6 +101,12 @@ export default {
     closeMobileMenu() {
       this.isMobileHeaderActive = false;
       document.documentElement.style.overflow = "auto";
+    },
+    linkTo(link) {
+      this.closeMobileMenu();
+      setTimeout(() => {
+        this.$router.push(link);
+      }, 500);
     },
   },
 };

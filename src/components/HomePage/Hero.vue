@@ -21,7 +21,7 @@
   }
 }
 .hero {
-  background-image: url(../assets/img/hero_background.png);
+  background-image: url(../../assets/img/hero_background.png);
   background-position: center;
   // background-size: cover;
   padding-bottom: 433px;

@@ -5,12 +5,12 @@ body {
     font-family: Circe, sans-serif;
     font-size: 16px;
     line-height: 24px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
-
-
 .container {
-    @apply max-w-screen-lg px-6 mx-auto;
+    @apply max-w-screen-lg px-6 mx-auto min-h-full;
 }
 .button {
     @apply rounded-50;
