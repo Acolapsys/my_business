@@ -1,33 +1,36 @@
 <template>
-  <div class="profile mobile-max:py-6">
+  <div class="profile py-6">
     <div class="container">
-      <div class="flex justify-center items-center">
+      <div class="flex">
         <form class="profile_form flex flex-col" @submit.prevent="saveProfile">
           <h3 class="font-bold text-24 mb-6 text-black2">Личный кабинет</h3>
-
           <div class="user flex flex-col mb-4">
-            <label for="user">Введите имя</label>
+            <label for="user">ФИО</label>
+            <input type="text" name="user" v-model="userData.FIO" />
+          </div>
+          <div class="avatar flex flex-col mb-4">
+            <label for="avatar">Ссылка на аватар</label>
+            <input type="text" name="avatar" v-model="userData.avatar" />
+          </div>
+          <div class="profession flex flex-col mb-4">
+            <label for="profession">Профессия</label>
             <input
               type="text"
-              name="user"
-              v-model="user"
-              @input="nameError = ''"
+              name="profession"
+              v-model="userData.profession"
             />
-            <span class="text-red py-2 px-2 text-12" v-if="nameError">{{
-              nameError
-            }}</span>
           </div>
-          <div class="password flex flex-col mb-4">
-            <label for="password">Введите пароль</label>
+          <div class="mail flex flex-col mb-4">
+            <label for="mail">E-mail</label>
+            <input type="email" name="mail" v-model="userData.mail" />
+          </div>
+          <div class="phone_number flex flex-col mb-4">
+            <label for="phoneNumber">Телефон</label>
             <input
-              type="password"
-              name="password"
-              v-model="password"
-              @input="passwordError = ''"
+              type="text"
+              name="phoneNumber"
+              v-model="userData.phoneNumber"
             />
-            <span class="text-red py-2 px-2 text-12" v-if="passwordError">{{
-              passwordError
-            }}</span>
           </div>
           <div class="buttons flex w-full justify-between items-center">
             <button
@@ -36,7 +39,7 @@
             >
               Сохранить
             </button>
-            <button @click.prevent="close" class="rounded-50 border px-8 py-1">
+            <button @click.prevent="logout" class="rounded-50 border px-8 py-1">
               Выйти
             </button>
           </div>
@@ -46,7 +49,33 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  name: "Profile",
+  data() {
+    return {
+      userData: {
+        FIO: "",
+        avatar: "",
+        profession: "",
+        mail: "",
+        phoneNumber: "",
+      },
+    };
+  },
+  created() {
+    this.userData = this.$store.state.userData;
+  },
+  methods: {
+    logout() {
+      this.$store.dispatch("signOut");
+      this.$router.push("/");
+    },
+    saveProfile() {
+      this.$store.dispatch("saveUserData", this.userData);
+      this.$router.push("/");
+    },
+  },
+};
 </script>
 <style lang="scss" scoped>
 .profile {

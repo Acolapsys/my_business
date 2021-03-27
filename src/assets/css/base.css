@@ -13,5 +13,11 @@ body {
     @apply max-w-screen-lg px-6 mx-auto min-h-full;
 }
 .button {
-    @apply rounded-50;
+    @apply rounded-50 cursor-pointer hover:opacity-80;
+}
+button {
+    @apply hover:opacity-80;
+}
+input {
+    @apply outline-none;
 }

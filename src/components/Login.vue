@@ -97,7 +97,7 @@ label {
   @apply text-16 block text-black2;
 }
 input {
-  @apply border p-2 rounded-xl outline-none;
+  @apply border p-2 rounded-xl;
 }
 button {
   @apply outline-none;
