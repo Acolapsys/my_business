@@ -16,6 +16,9 @@
   font-size: 35px;
   line-height: 111.4%;
   max-width: 576px;
+  @screen mobile-max {
+    font-size: 26px;
+  }
 }
 .hero {
   background-image: url(../assets/img/hero_background.png);

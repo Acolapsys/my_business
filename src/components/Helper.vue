@@ -33,6 +33,9 @@
   font-size: 35px;
   line-height: 52px;
   margin-bottom: 7px;
+  @screen mobile-max {
+    font-size: 30px;
+  }
 }
 .info {
   font-size: 16px;

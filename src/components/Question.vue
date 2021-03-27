@@ -7,11 +7,13 @@
       </h3>
       <div class="flex lg-max:flex-col">
         <div
-          class="button bg-red text-white py-3 px-12 mr-7 text-22 lg-max:mr-0 lg-max:mb-3"
+          class="button bg-red text-white py-3 px-12 mr-7 text-22 text-center lg-max:mr-0 lg-max:mb-3 mobile-max:text-16 mobile-max:px-6"
         >
           <a href="/">Да, у меня уже есть бизнес</a>
         </div>
-        <div class="button bg-blue text-white py-3 px-12 text-22">
+        <div
+          class="button bg-blue text-white py-3 px-12 text-22 text-center mobile-max:text-16 mobile-max:px-6"
+        >
           <a href="/">Нет, но планирую открыть</a>
         </div>
       </div>
@@ -23,6 +25,9 @@
   font-size: 30px;
   line-height: 111.4%;
   max-width: 552px;
+  @screen mobile-max {
+    font-size: 24px;
+  }
 }
 .question {
   background-image: url(../assets/img/background2.png);

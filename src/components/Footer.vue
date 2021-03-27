@@ -1,8 +1,10 @@
 <template>
   <footer class="footer py-8 bg-black3">
     <div class="max-w-screen-xl px-10 mx-auto">
-      <div class="flex items-center justify-between tablet-max:items-start">
-        <nav class="footer__nav flex tablet-max:flex-col">
+      <div
+        class="flex items-center justify-between tablet-max:items-start mobile-max:flex-col"
+      >
+        <nav class="footer__nav flex tablet-max:flex-col mobile-max:mb-6">
           <router-link
             :to="menuItem.link"
             class="text-white font-16 leading-6 font-bold tracking-small mr-11 tablet-max:mb-1"

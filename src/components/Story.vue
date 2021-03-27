@@ -7,7 +7,9 @@
       <img :src="story.img" alt="История успеха" />
     </div>
     <div class="content flex flex-col" :class="{ 'mr-5': !leftSide }">
-      <h4 class="font-bold text-black2 mb-6 text-24">{{ story.title }}</h4>
+      <h4 class="font-bold text-black2 mb-6 text-24 mobile-max:text-22">
+        {{ story.title }}
+      </h4>
       <div class="story__subtitle mb-4 flex">
         <img src="@/assets/img/arrows_right.svg" alt="Стрелка вправо" />
         <span class="text-red font-bold leading-5 ml-5">{{

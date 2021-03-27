@@ -4,7 +4,7 @@
       <div class="stories__title flex items-center justify-center mb-10">
         <img src="@/assets/img/span.svg" alt="span" class="mr-4" />
         <h3
-          class="stories__title_text text-black2 font-bold text-center text-40"
+          class="stories__title_text text-black2 font-bold text-center text-40 mobile-max:text-30"
         >
           Истории успеха
         </h3>
@@ -60,5 +60,8 @@ export default {
 <style lang="scss" scoped>
 .stories {
   margin-bottom: 180px;
+  @screen mobile-max {
+    margin-bottom: 40px;
+  }
 }
 </style>

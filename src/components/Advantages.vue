@@ -4,7 +4,7 @@
       <div class="advantages__title flex items-center justify-center">
         <img src="@/assets/img/span.svg" alt="span" class="mr-4" />
         <h3
-          class="advantages__title_text text-black2 font-bold text-center text-40"
+          class="advantages__title_text text-black2 font-bold text-center text-40 mobile-max:text-30"
         >
           Преимущества
         </h3>
@@ -22,9 +22,10 @@
           <span class="amount text-50 text-blue font-bold mb-2">{{
             item.amount
           }}</span>
-          <span class="text-20 text-black font-bold text-center">{{
-            item.text
-          }}</span>
+          <span
+            class="text-20 text-black font-bold text-center mobile-max:text-16"
+            >{{ item.text }}</span
+          >
         </div>
       </div>
     </div>
@@ -58,13 +59,16 @@ export default {
 <style lang="scss" scoped>
 .advantages {
   margin-bottom: 230px;
-
   &__title {
     margin-bottom: 72px;
     &_text {
       font-weight: bold;
       line-height: 122.4%;
     }
+  }
+  @screen mobile-max {
+    margin-bottom: 100px;
+    padding-top: 40px;
   }
 }
 .question {
