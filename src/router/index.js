@@ -12,12 +12,16 @@ const routes = [
     path: "/",
     name: "HomePage",
     component: () => import("../views/HomePage.vue"),
+    meta: {
+      title: "Мой бизнес",
+    },
   },
   {
     path: "/profile",
     name: "Profile",
     component: () => import("../views/Profile.vue"),
     meta: {
+      title: "Личный кабинет",
       middleware: [auth],
     },
   },
@@ -25,6 +29,9 @@ const routes = [
     path: "/login",
     name: "Login",
     component: () => import("../components/Login.vue"),
+    meta: {
+      title: "Авторизация",
+    },
   },
 ];
 
@@ -35,6 +42,7 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
+  document.title = to.meta.title;
   if (!to.meta.middleware) {
     return next();
   }
