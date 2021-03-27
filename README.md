@@ -1,24 +1,22 @@
-# my_business
+# Мой бизнес
 
-## Project setup
+## Установка проекта
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Запуск для разработки
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Сборка для продакшн
 ```
 yarn build
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Тестовое задание.
+Адаптивный лендинг с функцией личного кабинета и авторизацией.
+Реализовано сохранение профиля в localstorage, обработка ошибок на странице авторизации
+Проект написан на Vue с использованием Vue Router, Vuex, Tailwind CSS

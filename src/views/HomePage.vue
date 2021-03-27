@@ -1,21 +1,18 @@
 <template>
   <div class="home_page">
     <Hero />
-
     <Question />
     <Advantages />
     <Stories />
     <Helper />
-    <Footer />
   </div>
 </template>
 <script>
-import Hero from "@/components/Hero";
-import Question from "@/components/Question";
-import Advantages from "@/components/Advantages";
-import Stories from "@/components/Stories";
-import Helper from "@/components/Helper";
-import Footer from "@/components/Footer";
+import Hero from "@/components/HomePage/Hero";
+import Question from "@/components/HomePage/Question";
+import Advantages from "@/components/HomePage/Advantages";
+import Stories from "@/components/HomePage/Stories";
+import Helper from "@/components/HomePage/Helper";
 export default {
   components: {
     Hero,
@@ -23,7 +20,6 @@ export default {
     Advantages,
     Stories,
     Helper,
-    Footer,
   },
 };
 </script>

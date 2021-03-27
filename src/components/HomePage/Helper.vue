@@ -7,7 +7,7 @@
           >Задайте интересующие вас вопросы онлайн помощнику</span
         >
         <div
-          class="button bg-red text-white py-3 px-12 font-bold text-16 leading-5"
+          class="button bg-red text-white py-3 px-12 font-bold text-16 leading-5 cursor-pointer"
         >
           <a href="/" class="flex items-center"
             ><img
@@ -24,7 +24,7 @@
 </template>
 <style lang="scss" scoped>
 .helper {
-  background-image: url(../assets/img/background3.svg);
+  background-image: url(../../assets/img/background3.svg);
   background-position: center;
   background-size: cover;
   padding: 50px 0 72px;

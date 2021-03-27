@@ -37,17 +37,17 @@ export default {
     return {
       items: [
         {
-          img: require("../assets/img/advantage1.svg"),
+          img: require("@/assets/img/advantage1.svg"),
           amount: 482,
           text: "Организаций поддержки по Российской Федерации",
         },
         {
-          img: require("../assets/img/advantage2.svg"),
+          img: require("@/assets/img/advantage2.svg"),
           amount: 5240,
           text: "Оказано услуг государственной поддержки",
         },
         {
-          img: require("../assets/img/advantage3.svg"),
+          img: require("@/assets/img/advantage3.svg"),
           amount: 1360,
           text: "Зарегистрировано участников проекта",
         },
@@ -72,7 +72,7 @@ export default {
   }
 }
 .question {
-  background-image: url(../assets/img/background2.png);
+  background-image: url(../../assets/img/background2.png);
   background-position: center;
   padding-bottom: 130px;
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <header
-      class="header pt-8 mobile-max:bg-red mobile-max:text-white mobile-max:py-4"
+      class="header py-8 mobile-max:bg-red mobile-max:text-white mobile-max:py-4"
     >
       <div class="max-w-screen-xl px-10 mx-auto">
         <!-- desktop view -->
@@ -9,12 +9,12 @@
           <nav class="nav flex items-center mobile-max:flex-col">
             <router-link
               to="/profile"
-              class="rounded-50 text-white bg-red px-8 py-2 mr-7"
+              class="rounded-50 text-white bg-red px-8 py-2 mr-7 cursor-pointer hover:opacity-70"
               >Личный кабинет</router-link
             >
             <router-link to="/" class="font-bold">Каталог услуг</router-link>
           </nav>
-          <div class="helper flex items-center">
+          <div class="helper flex items-center cursor-pointer hover:opacity-70">
             <img src="@/assets/img/rocket.svg" alt="Онлайн помощник" />
             <span class="text-red ml-4 font-bold">Онлайн помощник</span>
           </div>
@@ -74,7 +74,14 @@
           />
         </svg>
       </div>
-      <div class="links-mobile">Links</div>
+      <div class="links-mobile pa-4">
+        <div @click="linkTo('/profile')">
+          <span :style="{ cursor: 'pointer' }">Личный кабинет</span>
+        </div>
+        <div @click="linkTo('/')">
+          <span :style="{ cursor: 'pointer' }">Каталог услуг</span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -94,6 +101,12 @@ export default {
     closeMobileMenu() {
       this.isMobileHeaderActive = false;
       document.documentElement.style.overflow = "auto";
+    },
+    linkTo(link) {
+      this.closeMobileMenu();
+      setTimeout(() => {
+        this.$router.push(link);
+      }, 500);
     },
   },
 };

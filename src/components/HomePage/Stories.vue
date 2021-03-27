@@ -21,7 +21,7 @@
   </section>
 </template>
 <script>
-import Story from "@/components/Story";
+import Story from "@/components/HomePage/Story";
 export default {
   components: {
     Story,
@@ -30,7 +30,7 @@ export default {
     return {
       stories: [
         {
-          img: require("../assets/img/story1.png"),
+          img: require("@/assets/img/story1.png"),
           title: "Пекарня “Русские традиции”",
           subtitle:
             "Как говорит сам Владимир: «мне хотелось, чтобы все узнали, что такое русская кухня», «обьяснить, что она жива».",
@@ -38,7 +38,7 @@ export default {
             "Чтобы мини-пекарня стала рентабельным бизнесом, необходимы строгие расчеты, учет рисков и перспектив, анализ рынка, налаживание сбыта.",
         },
         {
-          img: require("../assets/img/story2.png"),
+          img: require("@/assets/img/story2.png"),
           title: "Автомастерская",
           subtitle:
             "Первые дни независимости. Когда не нужно рано вставать, когда не нужно отпрашиваться, что бы успеть съездить в магазин, когда удобно.",
@@ -46,7 +46,7 @@ export default {
             "Встреча в городе Н с моими будущими партнерами была плодотворной. Я не смог заснуть до пяти утра – не потому что не спалось, но потому что мысли о будущих перспективах просто взрывали мой мозг.",
         },
         {
-          img: require("../assets/img/story3.png"),
+          img: require("@/assets/img/story3.png"),
           title: "Салон красоты “Эмират”",
           subtitle:
             "Когда же появилась возможность открыть свой бизнес, я рассматривала различные варианты, изучала всевозможные направления.",

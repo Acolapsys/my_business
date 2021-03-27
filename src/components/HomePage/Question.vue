@@ -30,7 +30,7 @@
   }
 }
 .question {
-  background-image: url(../assets/img/background2.png);
+  background-image: url(../../assets/img/background2.png);
   background-position: center;
   padding-bottom: 130px;
 }
